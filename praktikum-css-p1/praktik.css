@@ -1,0 +1,46 @@
+/* Element selector 1 */
+body {
+    background-color: #eaf1f8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Element selector 2 + ID selector */
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#judul {
+    color: #1f4e79;
+}
+
+/* Element selector 3 */
+p {
+    line-height: 1.6;
+}
+
+/* Class selector 1 */
+.biodata {
+    width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #1f4e79;
+    border-radius: 10px;
+}
+
+/* Class selector 2 */
+.intro {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Class selector 3 */
+.data-diri {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f7fa;
+    border-radius: 8px;
+}

@@ -1,0 +1,85 @@
+/* GROUPING SELECTOR */
+/* Satu aturan digunakan untuk beberapa selector */
+h1, h2, h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Mengatur tampilan seluruh halaman */
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+/* Judul halaman */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+/* Header */
+header {
+    background-color: #8B4513;
+    padding: 25px;
+    text-align: center;
+}
+
+header p {
+    color: white;
+}
+
+/* DESCENDANT SELECTOR */
+/* Hanya p yang berada di dalam .menu-item */
+.menu-item p {
+    color: #555555;
+}
+
+/* Daftar menu */
+.menu {
+    width: 600px;
+    margin: 30px auto;
+}
+
+/* Judul daftar menu */
+h2 {
+    text-align: center;
+    color: #8B4513;
+}
+
+/* Kartu menu */
+.menu-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* Nama makanan/minuman */
+.menu-item h3 {
+    color: #8B4513;
+    margin-bottom: 5px;
+}
+
+/* Harga */
+.menu-item span {
+    font-weight: bold;
+    color: green;
+}
+
+/* PSEUDO-CLASS :hover */
+/* Tampilan berubah ketika mouse diarahkan ke menu */
+.menu-item:hover {
+    background-color: #FFF3E0;
+    border-color: #8B4513;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
