@@ -1,0 +1,15 @@
+.kartu-profil {
+  width: 250px;
+  padding: 16px;
+  border: 2px solid #1F4E79;
+  margin-bottom: 20px;
+  background-color: #EAF1F8;
+}
+
+.kartu-profil {
+  box-sizing: border-box;
+  width: 250px;
+  padding: 16px;
+  border: 2px solid #1F4E79;
+  margin-bottom: 20px;
+}

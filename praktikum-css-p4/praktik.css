@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grouping selector */
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #1F4E79;
+  color: white;
+  padding: 20px 30px;
+}
+
+header h1 {
+  margin-bottom: 12px;
+}
+
+/* Descendant selector */
+header nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Link navigasi */
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Pseudo-class */
+header nav a:hover {
+  color: #FFD700;
+}
+
+/* Hero */
+#beranda {
+  text-align: center;
+}
+
+.hero {
+  background-color: #2E75B6;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 80px 25px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Profil */
+.profil {
+  padding: 40px 25px;
+  text-align: center;
+}
+
+.profil h2 {
+  margin-bottom: 15px;
+}
+
+/* Program */
+.program {
+  padding: 40px 25px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.program h2 {
+  margin-bottom: 20px;
+}
+
+/* Kartu */
+.kartu {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  min-height: 180px;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.kartu h3 {
+  color: #1F4E79;
+  margin-bottom: 12px;
+}
+
+.kartu p {
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
