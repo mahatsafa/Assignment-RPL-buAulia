@@ -1,0 +1,14 @@
+p {
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+#judul-utama {
+  color: darkblue;
+  text-align: center;
+}
