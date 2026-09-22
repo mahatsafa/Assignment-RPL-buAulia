@@ -1,0 +1,1 @@
+yo iki tugas ambek ziya, hooh
