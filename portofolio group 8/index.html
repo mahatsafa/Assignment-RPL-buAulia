@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alya Ramadhani — Portofolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR / HEADER (ID Selector: #navbar) ========== -->
+  <header id="navbar" class="navbar">
+    <div class="navbar-inner">
+      <a href="#hero" class="logo">AR<span class="logo-dot">.</span></a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#cta">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a href="#cta" class="btn btn-primary btn-small">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION (ID Selector: #hero) ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Halo, perkenalkan saya</p>
+      <h1>Alya Ramadhani</h1>
+      <p class="hero-role">Front-End Developer &amp; Peracik Antarmuka Digital</p>
+      <p class="hero-desc">
+        Saya membangun halaman web yang rapi, ringan, dan enak dipakai —
+        mulai dari company profile sederhana sampai dashboard internal kecil.
+        Proyek di bawah ini sebagian besar lahir dari tugas kuliah dan
+        proyek iseng bareng teman satu kelompok.
+      </p>
+      <div class="hero-actions">
+        <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#about" class="btn btn-outline">Kenalan Dulu</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="browser-card">
+        <div class="browser-bar">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="browser-body">
+          <div class="skeleton-line w-70"></div>
+          <div class="skeleton-line w-40"></div>
+          <div class="skeleton-block"></div>
+          <div class="skeleton-row">
+            <div class="skeleton-chip"></div>
+            <div class="skeleton-chip"></div>
+          </div>
+        </div>
+      </div>
+      <p class="floating-badge">3+ tahun belajar ngoding</p>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / INFORMASI (ID Selector: #about) ========== -->
+  <section id="about" class="about">
+    <div class="about-photo">
+      <div class="photo-frame"></div>
+    </div>
+
+    <div class="about-text">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya mahasiswa Informatika yang senang berada di persimpangan
+        desain dan kode. Bagi saya, halaman web yang baik itu bukan cuma
+        soal tampil cantik, tapi juga gampang dipahami dan cepat diakses.
+      </p>
+      <p>
+        Di luar tugas kuliah, saya suka membedah desain website orang
+        lain lewat DevTools, sekadar untuk tahu bagaimana bagian per
+        bagiannya disusun.
+      </p>
+
+      <ul class="skills">
+        <li class="tag">HTML</li>
+        <li class="tag">CSS</li>
+        <li class="tag">JavaScript</li>
+        <li class="tag">Figma</li>
+        <li class="tag">Git</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== PRODUK / LAYANAN → PROYEK (ID Selector: #proyek) ========== -->
+  <section id="proyek" class="proyek">
+    <h2>Proyek Pilihan</h2>
+    <p class="section-desc">
+      Beberapa proyek yang pernah saya kerjakan, dari tugas kelompok
+      sampai proyek kecil-kecilan bareng teman.
+    </p>
+
+    <div class="projects-grid">
+      <article class="project-card project-card--featured">
+        <div class="project-thumb thumb-1" aria-hidden="true"></div>
+        <div class="project-info">
+          <h3>SIAKAD Kampus — Redesign</h3>
+          <p>
+            Merancang ulang tampilan sistem akademik kampus supaya lebih
+            ramah untuk mahasiswa baru, dari halaman login sampai KRS.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-outline">UI/UX</span>
+            <span class="tag tag-outline">Figma</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb thumb-2" aria-hidden="true"></div>
+        <div class="project-info">
+          <h3>Kasir UMKM</h3>
+          <p>Aplikasi kasir sederhana untuk warung dan toko kelontong.</p>
+          <div class="project-tags">
+            <span class="tag tag-outline">JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb thumb-3" aria-hidden="true"></div>
+        <div class="project-info">
+          <h3>Landing Page Event Musik</h3>
+          <p>Halaman promosi acara musik kampus lengkap dengan RSVP online.</p>
+          <div class="project-tags">
+            <span class="tag tag-outline">HTML</span>
+            <span class="tag tag-outline">CSS</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== CTA / AJAKAN (ID Selector: #cta) ========== -->
+  <section id="cta" class="cta">
+    <div class="cta-inner">
+      <h2>Punya ide proyek? Yuk, ngobrol.</h2>
+      <p>
+        Saya selalu terbuka untuk kolaborasi, tugas kelompok, atau
+        sekadar diskusi soal desain dan kode.
+      </p>
+      <a href="mailto:alya.ramadhani@email.com" class="btn btn-light">Kirim Email</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (ID Selector: #footer) ========== -->
+  <footer id="footer" class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <p class="logo">AR<span class="logo-dot">.</span></p>
+        <p>Front-End Developer &amp; UI/UX Enthusiast.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#cta">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Terhubung</h4>
+        <ul class="social-links">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer-bottom">
+      &copy; 2026 Alya Ramadhani. Dibuat untuk tugas kelompok — studi kasus Portofolio.
+    </p>
+  </footer>
+
+</body>
+</html>
