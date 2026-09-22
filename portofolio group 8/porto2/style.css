@@ -1,0 +1,224 @@
+/* ============================================================
+   DAFTAR ISI — cari nomornya di komentar sepanjang file ini
+   1. Element Selector        -> body, a, h1, h2, p, ul
+   2. Class Selector           -> .btn, .card, .logo
+   3. ID Selector              -> #navbar #hero #about #produk #cta #footer
+      (lihat juga index.html, tiap <section> sudah diberi id)
+   4. Group Selector           -> "h1, h2" dan ".btn, .card"
+   5. Child Selector ( > )     -> .nav-links > li
+   6. Descendant Selector      -> .card p
+   7. Pseudo-Class Hover       -> .btn:hover, .nav-links a:hover
+   8. Box Model                -> cari tulisan "BOX MODEL" di komentar
+   9. Display                  -> cari tulisan "DISPLAY" di komentar
+   10. Ketentuan Landing Page  -> lihat komentar section di index.html
+   ============================================================ */
+
+* {
+  box-sizing: border-box; /* BOX MODEL: lebar elemen jadi sudah termasuk padding & border */
+}
+
+/* ------------------------------------------------------------
+   1. ELEMENT SELECTOR
+   Menata tag HTML langsung, berlaku untuk semua tag itu.
+   ------------------------------------------------------------ */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222222;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 10px 0; /* BOX MODEL: jarak bawah tiap paragraf */
+}
+
+/* ------------------------------------------------------------
+   4. GROUP SELECTOR
+   Beberapa selector dipisah koma, sama-sama dapat aturan ini.
+   ------------------------------------------------------------ */
+h1, h2 {
+  font-family: Arial, sans-serif;
+  margin: 0 0 12px 0; /* BOX MODEL */
+}
+
+section {
+  padding: 60px 24px; /* BOX MODEL: jarak dalam tiap section */
+  text-align: center;
+}
+
+/* ------------------------------------------------------------
+   2. CLASS SELECTOR
+   Bisa dipakai berkali-kali di elemen berbeda-beda.
+   ------------------------------------------------------------ */
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block; /* DISPLAY: supaya <a> bisa punya padding seperti tombol */
+  padding: 10px 20px;    /* BOX MODEL */
+  margin-top: 10px;      /* BOX MODEL */
+  border: 2px solid #2b6777; /* BOX MODEL */
+  border-radius: 6px;
+  background: #2b6777;
+  color: #ffffff;
+}
+
+.btn-terang {
+  background: #ffffff;
+  color: #2b6777;
+}
+
+.card {
+  background: #f4f4f4;
+  border: 1px solid #dddddd; /* BOX MODEL */
+  border-radius: 6px;
+  padding: 20px;   /* BOX MODEL */
+  margin: 10px;    /* BOX MODEL */
+  text-align: left;
+}
+
+/* ------------------------------------------------------------
+   3. ID SELECTOR
+   Menata satu elemen unik lewat atribut id="..." di HTML.
+   ------------------------------------------------------------ */
+#navbar {
+  border-bottom: 1px solid #dddddd; /* BOX MODEL */
+}
+
+#hero {
+  background: #eaf4f4;
+}
+
+#produk {
+  background: #fafafa;
+}
+
+#cta {
+  background: #2b6777;
+  color: #ffffff;
+}
+
+#footer {
+  background: #222222;
+  color: #ffffff;
+  padding: 20px; /* BOX MODEL */
+}
+
+/* ------------------------------------------------------------
+   9. DISPLAY
+   Mengatur bagaimana elemen tersusun: flex (baris sejajar)
+   atau grid (kolom otomatis).
+   ------------------------------------------------------------ */
+.navbar-inner {
+  display: flex; /* logo, menu, tombol sejajar dalam satu baris */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 20px; /* BOX MODEL */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.produk-list {
+  display: grid; /* kartu tersusun otomatis dalam kolom */
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 20px auto 0; /* BOX MODEL */
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ------------------------------------------------------------
+   5. CHILD SELECTOR ( > )
+   Hanya menata anak langsung, bukan keturunan yang lebih dalam.
+   ------------------------------------------------------------ */
+.nav-links > li {
+  font-size: 0.95rem;
+}
+
+.produk-list > .card {
+  height: 100%;
+}
+
+/* ------------------------------------------------------------
+   6. DESCENDANT SELECTOR (spasi)
+   Menata elemen di dalam elemen lain, seberapa pun dalamnya.
+   ------------------------------------------------------------ */
+.card p {
+  color: #555555;
+  font-size: 0.95rem;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------
+   7. PSEUDO-CLASS HOVER
+   Aktif hanya saat kursor diarahkan ke elemen tersebut.
+   ------------------------------------------------------------ */
+.btn:hover {
+  opacity: 0.85;
+}
+
+.nav-links a:hover {
+  color: #2b6777;
+}
+
+.card:hover {
+  border-color: #2b6777;
+}
+
+/* ------------------------------------------------------------
+   Elemen bantu untuk bagian About (kotak foto polos, tanpa gambar)
+   ------------------------------------------------------------ */
+.foto-kotak {
+  width: 160px;
+  height: 160px;
+  min-width: 160px;
+  background: #cccccc;
+  border-radius: 6px;
+}
+
+/* ------------------------------------------------------------
+   RESPONSIVE — supaya rapi juga di layar HP
+   ------------------------------------------------------------ */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+
+  .produk-list {
+    grid-template-columns: 1fr;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
