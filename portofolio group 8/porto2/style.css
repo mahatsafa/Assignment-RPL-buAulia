@@ -1,7 +1,7 @@
 /* ============================================================
    DAFTAR ISI — cari nomornya di komentar sepanjang file ini
    1. Element Selector        -> body, a, h1, h2, p, ul
-   2. Class Selector           -> .btn, .card, .logo
+   2. Class Selector           -> .btn, .card, .logo, .tag
    3. ID Selector              -> #navbar #hero #about #produk #cta #footer
       (lihat juga index.html, tiap <section> sudah diberi id)
    4. Group Selector           -> "h1, h2" dan ".btn, .card"
@@ -88,6 +88,16 @@ section {
   padding: 20px;   /* BOX MODEL */
   margin: 10px;    /* BOX MODEL */
   text-align: left;
+}
+
+.tag {
+  display: inline-block; /* DISPLAY: biar tiap tag sebaris tapi tetap punya padding sendiri */
+  padding: 4px 12px; /* BOX MODEL */
+  margin: 4px 4px 0 0; /* BOX MODEL */
+  border: 1px solid #2b6777; /* BOX MODEL */
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #2b6777;
 }
 
 /* ------------------------------------------------------------
